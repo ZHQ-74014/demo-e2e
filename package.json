@@ -1,0 +1,16 @@
+{
+  "name": "demo-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "node --check playwright.config.mjs && node --check scripts/start-demo.mjs && node --check tests/report.spec.mjs",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
